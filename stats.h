@@ -21,6 +21,8 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
+#include <string.h>
+
 /**
  * @brief the print_statistics function
  *
@@ -100,9 +102,10 @@ unsigned char find_minimum(unsigned char array[], unsigned int size);
  *
  * @param array An array of unsigned char data
  * @param size The size of the array in unsigned int
+ * @param sorted The sorted array destination
  *
  * @return none
  */
-void sort_array(unsigned char array[], unsigned int size);
+void sort_array(unsigned char array[], unsigned int size, unsigned char sorted[]);
 
 #endif /* __STATS_H__ */
