@@ -9,32 +9,100 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief the stats header file
  *
- * <Add Extended Description Here>
+ * Includes declaration and description of Stats project's functions
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Ahmed Magdy
+ * @date Oct. 2019
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+ * @brief the print_statistics function
+ *
+ * prints a formatted string containing the array statistics
+ *
+ * @param array An Array of unsigned char elements
+ * @param size The size of the array in unsigned int
+ *
+ * @return none
+ */
+void print_statistics(unsigned char array[], unsigned int size);
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief the print_array function
  *
- * <Add Extended Description Here>
+ * print an array of data in a formatted form
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param array the array of data (unsigned char)
+ * @param size the size of the array in unsigned int
  *
- * @return <Add Return Informaiton here>
+ * @return none
  */
+void print_array(unsigned char array[], unsigned int size);
 
+/**
+ * @brief the find_median function
+ *
+ * Finds the median of an array of data
+ *
+ * @param array an array of unsigned char data
+ * @param size the size of the array in unsigned int
+ *
+ * @return the unsigned char median of the data
+ */
+unsigned char find_median(unsigned char array[], unsigned int size);
+
+/**
+ * @brief find_mean function
+ *
+ * Finds the mean of an array of data
+ *
+ * @param array An array of unsigned char data
+ * @param size The size of the array
+ *
+ * @return The unsigned char mean rounded to the smallest integer
+ */
+unsigned char find_mean(unsigned char array[], unsigned int size);
+
+/**
+ * @brief The find_maximum function
+ *
+ * Finds the maximum value of unsorted array of data
+ *
+ * @param array An array of unsigned char data
+ * @param size The size of the array in unsigned int
+ *
+ * @return The maximum value of the array in unsigned char
+ */
+unsigned char find_maximum(unsigned char array[], unsigned int size);
+
+/**
+ * @brief The find_minimum function
+ *
+ * Finds the minimum value of unsorted array of data
+ *
+ * @param array An array of unsigned char data
+ * @param size The size of the array in unsigned int
+ *
+ * @return The minimum value of the array in unsigned char
+ */
+unsigned char find_minimum(unsigned char array[], unsigned int size);
+
+/**
+ * @brief The sort_array function
+ *
+ * Sorts an array of data
+ *
+ * @param array An array of unsigned char data
+ * @param size The size of the array in unsigned int
+ *
+ * @return none
+ */
+void sort_array(unsigned char array[], unsigned int size);
 
 #endif /* __STATS_H__ */
